@@ -79,7 +79,7 @@ class Downloader:
         yt = YouTube(link)
         old_file = pasta + os.sep + yt.title
         print(f"Old_file {old_file}")
-        new_file = old_file[:-3] + ".mp3"
+        new_file = old_file[:-4] + ".mp3"
         print(f"New_file {new_file}")
         print(old_file, new_file)
         os.rename(old_file, new_file)
